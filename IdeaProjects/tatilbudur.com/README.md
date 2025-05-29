@@ -1,4 +1,4 @@
-**Tatilbudur** websitesi için hazırlanmış bir otomasyon test framework'tür. 
+**Tatilbudur** websitesi için hazırlanmış test otomasyon framework'tür. 
 
 **Kullanılan Tool ve Teknolojiler**
 -
