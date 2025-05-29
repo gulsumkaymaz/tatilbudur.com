@@ -23,6 +23,6 @@ public class TestNGExample extends BasePage {
 
     // Antalya kelimesi arama kısmına girilir
    getHomePage().turAraInput.sendKeys("Antalya");
-}
 
+}
 }
