@@ -1,4 +1,8 @@
 package stepDefs;
 
-public class CucumberExample {
+import pages.BasePage;
+
+public class CucumberExample extends BasePage {
+
+
 }

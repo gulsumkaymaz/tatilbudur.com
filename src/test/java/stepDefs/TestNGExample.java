@@ -2,11 +2,13 @@ package stepDefs;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.BasePage;
+import pages.HomePage;
 import utils.Config;
 import utils.Driver1;
 
 
-public class TestNGExample {
+public class TestNGExample extends BasePage {
 
 @Test
     public void transferSearch(){
@@ -16,10 +18,11 @@ public class TestNGExample {
     Driver1.getDriver().get(homepageUrl);
     Assert.assertTrue(Driver1.getDriver().getCurrentUrl().contains(homepageUrl));
 
+    // Tur ara seçeneğine tıklanır
+    getHomePage().turAraButon.click();
+
     // Antalya kelimesi arama kısmına girilir
-
-
-    // Başlangıç ve bitiş tarihleri seçilir
-
+   getHomePage().turAraInput.sendKeys("Antalya");
 }
+
 }
