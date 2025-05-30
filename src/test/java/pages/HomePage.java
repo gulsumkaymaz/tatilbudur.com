@@ -6,14 +6,20 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends BasePage {
 
     @FindBy(xpath = "//a[@role='tab'][normalize-space()='Tur Ara']")
-    public WebElement turAraButon;
+    public WebElement turAraTabi;
 
-    @FindBy(xpath = "//input[@id='key']")
+    @FindBy(xpath = "//input[@id='searchTourV2']")
     public WebElement turAraInput;
+
+    @FindBy(xpath = "//button[@id='searchFormTourV2Submit']")
+    public WebElement turAraButon;
 
     @FindBy(xpath = "//input[@id='key']")
     public WebElement otelAraInput;
 
-    @FindBy(css = "#searchFormHotelSubmitBtn")
+    @FindBy(xpath=  "//button[@id='searchFormHotelSubmitBtn']")
     public WebElement otelAraButon;
+
+
+
 }

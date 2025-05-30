@@ -10,19 +10,20 @@ import utils.Driver1;
 
 public class TestNGExample extends BasePage {
 
-@Test
-    public void transferSearch(){
+    @Test
+    public void transferSearch() {
 
-    // TatilBudur web sitesi açılır
-    String homepageUrl = Config.getProperty("baseurl");
-    Driver1.getDriver().get(homepageUrl);
-    Assert.assertTrue(Driver1.getDriver().getCurrentUrl().contains(homepageUrl));
+        // TatilBudur web sitesi açılır
+        String homepageUrl = Config.getProperty("baseurl");
+        Driver1.getDriver().get(homepageUrl);
+        Assert.assertTrue(Driver1.getDriver().getCurrentUrl().contains(homepageUrl));
 
-    // Tur ara seçeneğine tıklanır
-    getHomePage().turAraButon.click();
+        // Tur ara seçeneğine tıklanır
+        getHomePage().turAraTabi.click();
 
-    // Antalya kelimesi arama kısmına girilir
-   getHomePage().turAraInput.sendKeys("Antalya");
+        // Antalya kelimesi arama kısmına girilir
+        getHomePage().turAraInput.sendKeys("Antalya");
+        getHomePage().turAraButon.click();
 
-}
+    }
 }
